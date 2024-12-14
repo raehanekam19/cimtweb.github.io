@@ -1,0 +1,245 @@
+* {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   box-sizing: border-box;
+}
+
+body {
+   background-image: url('img/bg.jpg');
+   background-position: center;
+   background-blend-mode: multiply;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+}
+
+.logo img {
+   width: 265px;
+   height: 65px;
+}
+
+header {
+   position: fixed;
+   width: 100%;
+   height: 80px;
+   background: #ffffff26;
+   backdrop-filter: blur(10px);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 100px;
+   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+header .vertical {
+   position:fixed;
+   display: block;
+   border-left: 2px solid;
+   height: 70px;
+   left: 400px;
+   top: 5px;
+   color: #000000;
+}
+
+header .icon-medsos {
+   position: absolute;
+   display: block;
+   height: 70px;
+   left: 415px;
+   top: 8px;
+}
+
+.icon-medsos a {
+   text-decoration: none;
+   color: #000000;
+}
+
+header .name-medsos {
+   position: absolute;
+   display: block;
+   height: 70px;
+   left: 440px;
+   top: 8px;
+}
+
+input {
+   display: none;
+   visibility: hidden;
+}
+
+.btnbar {
+   position: absolute;
+   height: 30px;
+   width: 30px;
+   right: 40px;
+   top: 25px;
+   z-index: 1;
+   display: none;
+   cursor: pointer;
+   border-radius: 3px;
+   background-color: #000000;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.btnbar .common {
+   position: absolute;
+   height: 1.5px;
+   width: 20px;
+   background-color: #ffffff;
+   border-radius: 50px;
+   transition: 0.3s ease
+}
+
+.btnbar .top_line {
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+.btnbar .middle_line {
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+.btnbar .bottom_line{
+   top: 70%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+input:checked ~ .btnbar .top_line {
+   left: 2px;
+   top: 14px;
+   width: 25px;
+   transform: rotate(45deg);
+}
+
+input:checked ~ .btnbar .bottom_line {
+   left: 2px;
+   top: 14px;
+   width: 25px;
+   transform: rotate(-45deg);
+}
+
+input:checked ~ .btnbar .middle_line {
+   opacity: 0;
+   transform: translateX(20px);
+}
+
+.navbar ul {
+   display: flex;
+}
+
+.navbar ul li a {
+   display: block;
+   text-transform: uppercase;
+   color: #fefefe;
+   font-size: 14px;
+   font-weight: 650;
+   padding: 5px 20px;
+   border-radius: 10px;
+   transition: .3s;
+   margin: 0 3px;
+}
+
+.navbar ul li a:hover {
+   color: #11101b;
+   background: #fefefe;
+}
+
+.navbar ul li a.active {
+   color: #11101b;
+   background: #fefefe;
+}
+
+section {
+   padding: 500px 0;
+}
+
+@media only screen and (max-width: 1320px) {
+   header {
+      padding: 0 50px;
+   }
+}
+
+@media only screen and (max-width: 1100px) {
+   header {
+      padding: 0 30px;
+   }
+
+   header .vertical {
+      display: none;
+   }
+
+   header .vertical {
+      display: none;
+   }
+
+   header .icon-medsos {
+      display: none;
+   }
+
+   header .name-medsos {
+      display: none;
+   }
+
+}
+
+@media only screen and (max-width: 800px) {
+   .btnbar {
+      display: block;
+   }
+
+   input {
+      display: block;
+   }
+
+   .navbar {
+      position: absolute;
+      height: 0;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background-color: #75757596;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, .8) ;
+      transition: .5s;
+      overflow: hidden;
+   }
+
+   .navbar.active {
+      height: 330px;
+   }
+
+   .navbar ul {
+      display: block;
+      width: fit-content;
+      margin: 80px auto 0 auto;
+      text-align: center;
+      transition: .5s;
+      opacity: 0;
+   }
+
+   .navbar.active ul {
+      opacity: 1;
+   }
+
+   .navbar ul li a {
+      margin-bottom: 20px;
+   }
+
+   .navbar ul li a {
+      text-transform: capitalize;
+   }
+}
+
+@media only screen and (max-width: 450px) {
+   header .icon-medsos {
+      display: block;
+      left: 405px;
+   }
+}
