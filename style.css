@@ -246,7 +246,8 @@ section {
 
 @media only screen and (max-width: 600px) {
    header .icon-medsos {
+      position: absolute;
       display: block;
-      left: 390px;
+      left: 300px;
    }
 }
