@@ -17,8 +17,9 @@ body {
 }
 
 .logo img {
-   width: 265px;
-   height: 65px;
+   width: 245px;
+   height: 125px;
+   padding-bottom: 10px;
 }
 
 header {
@@ -74,7 +75,7 @@ input {
    position: absolute;
    height: 30px;
    width: 30px;
-   right: 40px;
+   right: 80px;
    top: 25px;
    z-index: 1;
    display: none;
@@ -198,6 +199,12 @@ section {
       display: block;
    }
 
+   .logo img {
+      width: 200px;
+      height: 100px;
+      padding-bottom: 5px;
+   }
+
    .navbar {
       position: absolute;
       height: 0;
@@ -237,7 +244,7 @@ section {
    }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
    header .icon-medsos {
       display: block;
       left: 405px;
