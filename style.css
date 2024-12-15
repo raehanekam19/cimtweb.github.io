@@ -26,7 +26,7 @@ header {
    position: fixed;
    width: 100%;
    height: 80px;
-   background: #ffffff26;
+   background: #4b4b4bbe;
    backdrop-filter: blur(10px);
    display: flex;
    align-items: center;
@@ -40,7 +40,7 @@ header .vertical {
    display: block;
    border-left: 2px solid;
    height: 70px;
-   left: 400px;
+   left: 380px;
    top: 5px;
    color: #000000;
 }
@@ -49,7 +49,7 @@ header .icon-medsos {
    position: absolute;
    display: block;
    height: 70px;
-   left: 415px;
+   left: 400px;
    top: 8px;
 }
 
@@ -62,7 +62,7 @@ header .name-medsos {
    position: absolute;
    display: block;
    height: 70px;
-   left: 440px;
+   left: 425px;
    top: 8px;
 }
 
@@ -75,7 +75,7 @@ input {
    position: absolute;
    height: 30px;
    width: 30px;
-   right: 80px;
+   right: 60px;
    top: 25px;
    z-index: 1;
    display: none;
@@ -244,9 +244,9 @@ section {
    }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 470px) {
    header .icon-medsos {
       display: block;
-      left: 405px;
+      left: 390px;
    }
 }
