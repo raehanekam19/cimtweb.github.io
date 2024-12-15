@@ -248,6 +248,7 @@ section {
    header .icon-medsos {
       position: absolute;
       display: block;
+      z-index: 3;
       left: 300px;
    }
 }
