@@ -1,9 +1,11 @@
+// Button Menu
    btnbar = document.querySelector(".btnbar");
    btnbar.onclick = function() {
       navbarBar = document.querySelector(".navbar");
       navbarBar.classList.toggle("active");
 }
 
+// Slider
 let list = document.querySelector('.slider .list');
 let items = document.querySelectorAll('.slider .list .item');
 let dots = document.querySelectorAll('.slider .dots li');
